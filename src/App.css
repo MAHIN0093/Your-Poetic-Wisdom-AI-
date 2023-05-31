@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Set max width and center content */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Add styles for chatbot container */
+.chatbot-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Add styles for chatbot message list */
+.message-list {
+  height: calc(100% - 60px);
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Add styles for chatbot message input */
+.message-input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+
+/* Add styles for chatbot message */
+.message {
+  margin-bottom: 1rem;
+}
+
+/* Add styles for chatbot message from user */
+.message.outgoing {
+  text-align: right;
+}
+
+/* Add styles for chatbot message from chatbot */
+.message.incoming {
+  text-align: left;
+}
+
+/* Add styles for chatbot typing indicator */
+.typing-indicator {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  font-style: italic;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100vh;
+}
+
+.key{
+  margin: 1rem 0rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  width: 100%;
+  height: auto;
+}
+
+.input{
+  margin: 0.5rem 0rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  width: 80%;
+  height: fit-content;
+}
